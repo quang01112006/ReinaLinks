@@ -22,7 +22,7 @@ body {
   color: white;
 }
 main {
-  max-width: 500px;
+  width: 90vw;
   width: 100%;
   height: auto;
   margin: 10px auto;
