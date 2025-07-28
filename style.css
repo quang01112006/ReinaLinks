@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+* {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  color: white;
+}
+main {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  margin: 10px auto;
+  padding: 16px;
+  border-radius: 15px;
+  background-color: rgba(24, 24, 66, 0.5);
+}
+.img {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+}
+.avt {
+  width: 8em;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -40px;
+  transform: translateX(-50%);
+  left: 50%;
+  border: 3px solid rgb(0, 204, 255);
+  box-shadow: 10px 0 10px rgba(0, 162, 255, 0.5);
+}
+.cover {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+.name {
+  text-align: center;
+  margin: 50px auto 10px;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #03b6ec;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #00b7ff;
+  }
+}
+
+.displayName {
+  font-size: 1.5em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #0e9fff, 0 0 30px #ff00ff,
+    0 0 40px #0921ff;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+.userName {
+  font-family: sans-serif;
+  font-size: 0.8em;
+  font-weight: 100;
+  color: rgb(103, 162, 240);
+}
+.bio {
+  text-align: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.item {
+  max-width: 450px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: rgba(35, 46, 94, 0.5);
+  border-radius: 8px;
+  box-shadow: 10px 10px 20px rgb(8, 16, 94);
+  overflow: hidden;
+}
+.link {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  flex: 1;
+  color: aliceblue;
+  transition: all ease-in 0.4;
+  text-shadow: 0 0 5px #fcfeff;
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.2em;
+}
+.item:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 20px rgb(27, 50, 255);
+}
+.item-icon {
+  width: 3rem;
+  border-radius: 50%;
+}
+footer {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px ;
+}
